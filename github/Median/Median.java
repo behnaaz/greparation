@@ -4,7 +4,7 @@ public class Median {
         int start=0;
         int end;
         IndexedArray(int[] input) {
-        	if (input == null) throw new IllegalArgumentException("Bad input");//ArgumentException
+        	if (input == null) throw new IllegalArgumentException("Bad input");
     		nums =  input;
     		end = input.length - 1;
 	}
@@ -63,11 +63,7 @@ public Double findMed(IndexedArray A, int start, int end, Boolean aIsFirst, Inde
     int haf = lensum / 2;
     boolean midIsExact = lensum % 2 == 1;	
     if (end < start) {
-    	if (aIsFirst) {
-    	        System.out.println("SWAAAPP!");
-    		return findMed(B, 0, B.numslength() - 1, false, A); 
-    	}
-    	return null; 
+    	return (aIsFirst) ? findMed(B, 0, B.numslength() - 1, false, A) : null;
     }
     int adex = (start + end)/2;
     double item = (double)(A.get(adex));

@@ -46,10 +46,7 @@ public class Median {
 public static void main(String[] args) {
         Median m = new Median();
     	Double median = m.findMed(m.A, 0, m.A.numslength() - 1, true, m.B);
-    	if (median != null) {
-    		System.out.println("Found in A: " + median);
-    	}
-    	else	System.out.println("Something is terribly wrong!");
+    	System.out.println("Found in A: " + median);
 }
 
 public double crossArrNext(IndexedArray arr, double d, boolean valFirst) {

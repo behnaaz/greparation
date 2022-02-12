@@ -34,7 +34,6 @@ public class Median {
 	}
     } 
 
-
     public IndexedArray A, B;
     public Median() {
 	int[] arr1 = {14,16,17, 80};
